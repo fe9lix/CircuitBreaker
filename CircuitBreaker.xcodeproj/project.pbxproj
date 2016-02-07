@@ -14,6 +14,8 @@
 		DC8841C91C67892E004C296B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8841C71C67892E004C296B /* LaunchScreen.storyboard */; };
 		DC8841D41C67892E004C296B /* CircuitBreakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8841D31C67892E004C296B /* CircuitBreakerTests.swift */; };
 		DC8841DF1C67892E004C296B /* CircuitBreakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8841DE1C67892E004C296B /* CircuitBreakerUITests.swift */; };
+		DC8841ED1C678979004C296B /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8841EC1C678979004C296B /* TestService.swift */; };
+		DC8841EF1C678CC3004C296B /* CircuitBreaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8841EE1C678CC3004C296B /* CircuitBreaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DC8841DA1C67892E004C296B /* CircuitBreakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircuitBreakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8841DE1C67892E004C296B /* CircuitBreakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitBreakerUITests.swift; sourceTree = "<group>"; };
 		DC8841E01C67892E004C296B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC8841EC1C678979004C296B /* TestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestService.swift; sourceTree = "<group>"; };
+		DC8841EE1C678CC3004C296B /* CircuitBreaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircuitBreaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				DC8841BE1C67892E004C296B /* AppDelegate.swift */,
-				DC8841C01C67892E004C296B /* ViewController.swift */,
-				DC8841C21C67892E004C296B /* Main.storyboard */,
 				DC8841C51C67892E004C296B /* Assets.xcassets */,
-				DC8841C71C67892E004C296B /* LaunchScreen.storyboard */,
+				DC8841EE1C678CC3004C296B /* CircuitBreaker.swift */,
 				DC8841CA1C67892E004C296B /* Info.plist */,
+				DC8841C71C67892E004C296B /* LaunchScreen.storyboard */,
+				DC8841C21C67892E004C296B /* Main.storyboard */,
+				DC8841EC1C678979004C296B /* TestService.swift */,
+				DC8841C01C67892E004C296B /* ViewController.swift */,
 			);
 			path = CircuitBreaker;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8841ED1C678979004C296B /* TestService.swift in Sources */,
 				DC8841C11C67892E004C296B /* ViewController.swift in Sources */,
+				DC8841EF1C678CC3004C296B /* CircuitBreaker.swift in Sources */,
 				DC8841BF1C67892E004C296B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

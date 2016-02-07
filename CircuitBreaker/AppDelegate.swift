@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  CircuitBreaker
-//
-//  Created by Felix Raab on 07/02/2016.
-//  Copyright © 2016 betriebsraum. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

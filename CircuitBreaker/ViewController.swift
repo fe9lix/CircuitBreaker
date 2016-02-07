@@ -1,25 +1,62 @@
-//
-//  ViewController.swift
-//  CircuitBreaker
-//
-//  Created by Felix Raab on 07/02/2016.
-//  Copyright © 2016 betriebsraum. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var infoTextView: UITextView!
+    
+    private let testService = TestService()
+    private var circuitBreaker: CircuitBreaker?
+    private var callShouldSucceed = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        circuitBreaker = CircuitBreaker(
+            timeout: 10.0,
+            maxRetries: 2,
+            timeBetweenRetries: 2.0,
+            exponentialBackoff: true,
+            resetTimeout: 2.0
+        )
+        circuitBreaker?.didTrip = { [weak self] circuitBreaker, error in
+            self?.logInfo("Failure (Code: \((error as! NSError).code)). Tripped! State: \(circuitBreaker.state)")
+        }
+        circuitBreaker?.call = { [weak self] circuitBreaker in
+            guard let strongSelf = self else { return }
+            strongSelf.logInfo("Perform call. State: \(circuitBreaker.state), failureCount: \(circuitBreaker.failureCount)")
+            
+            if strongSelf.callShouldSucceed {
+                strongSelf.testService.successCall() { data, error in
+                    circuitBreaker.success()
+                    strongSelf.logInfo("Success. State: \(circuitBreaker.state)")
+                }
+            } else {
+                strongSelf.testService.failureCall() { data, error in
+                    if circuitBreaker.failureCount < circuitBreaker.maxRetries {
+                        strongSelf.logInfo("Failure. Will retry. State: \(circuitBreaker.state)")
+                    }
+                    circuitBreaker.failure(error)
+                }
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func didTapFailureCall(sender: AnyObject) {
+        logInfo("> Start Failure Call")
+        callShouldSucceed = false
+        circuitBreaker?.execute()
     }
-
-
+    
+    @IBAction func didTapSuccessCall(sender: AnyObject) {
+        logInfo("> Start Success Call")
+        callShouldSucceed = true
+        circuitBreaker?.execute()
+    }
+    
+    private func logInfo(info: String) {
+        var newInfo = infoTextView.text
+        newInfo.appendContentsOf("\(info)\n")
+        infoTextView.text = newInfo
+    }
+    
 }
-

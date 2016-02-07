@@ -38,16 +38,6 @@
                ReferencedContainer = "container:CircuitBreaker.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC8841D91C67892E004C296B"
-               BuildableName = "CircuitBreakerUITests.xctest"
-               BlueprintName = "CircuitBreakerUITests"
-               ReferencedContainer = "container:CircuitBreaker.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
