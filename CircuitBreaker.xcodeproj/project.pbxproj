@@ -7,83 +7,129 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC58D2081C694BB2001D5C36 /* CircuitBreaker.h in Headers */ = {isa = PBXBuildFile; fileRef = DC58D2071C694BB2001D5C36 /* CircuitBreaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC58D20F1C694BB2001D5C36 /* CircuitBreaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC58D2051C694BB2001D5C36 /* CircuitBreaker.framework */; };
+		DC58D2161C694BB2001D5C36 /* CircuitBreakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC58D2151C694BB2001D5C36 /* CircuitBreakerTests.swift */; };
+		DC58D21A1C694BB2001D5C36 /* CircuitBreaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC58D2051C694BB2001D5C36 /* CircuitBreaker.framework */; };
+		DC58D21B1C694BB2001D5C36 /* CircuitBreaker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DC58D2051C694BB2001D5C36 /* CircuitBreaker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC58D2231C694BCD001D5C36 /* CircuitBreaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC58D2221C694BCD001D5C36 /* CircuitBreaker.swift */; };
+		DC5D9FEE1C694E6F00E07A90 /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8841EC1C678979004C296B /* TestService.swift */; };
 		DC8841BF1C67892E004C296B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8841BE1C67892E004C296B /* AppDelegate.swift */; };
 		DC8841C11C67892E004C296B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8841C01C67892E004C296B /* ViewController.swift */; };
 		DC8841C41C67892E004C296B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8841C21C67892E004C296B /* Main.storyboard */; };
 		DC8841C61C67892E004C296B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8841C51C67892E004C296B /* Assets.xcassets */; };
 		DC8841C91C67892E004C296B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8841C71C67892E004C296B /* LaunchScreen.storyboard */; };
-		DC8841D41C67892E004C296B /* CircuitBreakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8841D31C67892E004C296B /* CircuitBreakerTests.swift */; };
-		DC8841DF1C67892E004C296B /* CircuitBreakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8841DE1C67892E004C296B /* CircuitBreakerUITests.swift */; };
 		DC8841ED1C678979004C296B /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8841EC1C678979004C296B /* TestService.swift */; };
-		DC8841EF1C678CC3004C296B /* CircuitBreaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8841EE1C678CC3004C296B /* CircuitBreaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DC8841D01C67892E004C296B /* PBXContainerItemProxy */ = {
+		DC58D2101C694BB2001D5C36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC8841B31C67892E004C296B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DC8841BA1C67892E004C296B;
+			remoteGlobalIDString = DC58D2041C694BB2001D5C36;
 			remoteInfo = CircuitBreaker;
 		};
-		DC8841DB1C67892E004C296B /* PBXContainerItemProxy */ = {
+		DC58D2121C694BB2001D5C36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC8841B31C67892E004C296B /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DC8841BA1C67892E004C296B;
+			remoteInfo = CircuitBreakerExample;
+		};
+		DC58D2181C694BB2001D5C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8841B31C67892E004C296B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC58D2041C694BB2001D5C36;
 			remoteInfo = CircuitBreaker;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DC8E40BC1C69486F0018B0D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC58D21B1C694BB2001D5C36 /* CircuitBreaker.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		DC8841BB1C67892E004C296B /* CircuitBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircuitBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC8841BE1C67892E004C296B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC8841C01C67892E004C296B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC58D2051C694BB2001D5C36 /* CircuitBreaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircuitBreaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC58D2071C694BB2001D5C36 /* CircuitBreaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircuitBreaker.h; sourceTree = "<group>"; };
+		DC58D2091C694BB2001D5C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC58D20E1C694BB2001D5C36 /* CircuitBreakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircuitBreakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC58D2151C694BB2001D5C36 /* CircuitBreakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitBreakerTests.swift; sourceTree = "<group>"; };
+		DC58D2171C694BB2001D5C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC58D2221C694BCD001D5C36 /* CircuitBreaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircuitBreaker.swift; sourceTree = "<group>"; };
+		DC8841BB1C67892E004C296B /* CircuitBreakerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircuitBreakerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8841BE1C67892E004C296B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../CircuitBreakerExample/AppDelegate.swift; sourceTree = "<group>"; };
+		DC8841C01C67892E004C296B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../CircuitBreakerExample/ViewController.swift; sourceTree = "<group>"; };
 		DC8841C31C67892E004C296B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DC8841C51C67892E004C296B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC8841C51C67892E004C296B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../CircuitBreakerExample/Assets.xcassets; sourceTree = "<group>"; };
 		DC8841C81C67892E004C296B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DC8841CA1C67892E004C296B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC8841CF1C67892E004C296B /* CircuitBreakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircuitBreakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC8841D31C67892E004C296B /* CircuitBreakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitBreakerTests.swift; sourceTree = "<group>"; };
-		DC8841D51C67892E004C296B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC8841DA1C67892E004C296B /* CircuitBreakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircuitBreakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC8841DE1C67892E004C296B /* CircuitBreakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitBreakerUITests.swift; sourceTree = "<group>"; };
-		DC8841E01C67892E004C296B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC8841EC1C678979004C296B /* TestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestService.swift; sourceTree = "<group>"; };
-		DC8841EE1C678CC3004C296B /* CircuitBreaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircuitBreaker.swift; sourceTree = "<group>"; };
+		DC8841CA1C67892E004C296B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../CircuitBreakerExample/Info.plist; sourceTree = "<group>"; };
+		DC8841EC1C678979004C296B /* TestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestService.swift; path = ../CircuitBreakerExample/TestService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC58D2011C694BB2001D5C36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC58D20B1C694BB2001D5C36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC58D20F1C694BB2001D5C36 /* CircuitBreaker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC8841B81C67892E004C296B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC8841CC1C67892E004C296B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC8841D71C67892E004C296B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DC58D21A1C694BB2001D5C36 /* CircuitBreaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC58D2061C694BB2001D5C36 /* CircuitBreaker */ = {
+			isa = PBXGroup;
+			children = (
+				DC58D2071C694BB2001D5C36 /* CircuitBreaker.h */,
+				DC58D2221C694BCD001D5C36 /* CircuitBreaker.swift */,
+				DC58D2091C694BB2001D5C36 /* Info.plist */,
+			);
+			path = CircuitBreaker;
+			sourceTree = "<group>";
+		};
+		DC58D2141C694BB2001D5C36 /* CircuitBreakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC58D2151C694BB2001D5C36 /* CircuitBreakerTests.swift */,
+				DC58D2171C694BB2001D5C36 /* Info.plist */,
+			);
+			path = CircuitBreakerTests;
+			sourceTree = "<group>";
+		};
 		DC8841B21C67892E004C296B = {
 			isa = PBXGroup;
 			children = (
-				DC8841BD1C67892E004C296B /* CircuitBreaker */,
-				DC8841D21C67892E004C296B /* CircuitBreakerTests */,
-				DC8841DD1C67892E004C296B /* CircuitBreakerUITests */,
+				DC8841BD1C67892E004C296B /* CircuitBreakerExample */,
+				DC58D2061C694BB2001D5C36 /* CircuitBreaker */,
+				DC58D2141C694BB2001D5C36 /* CircuitBreakerTests */,
 				DC8841BC1C67892E004C296B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,56 +137,50 @@
 		DC8841BC1C67892E004C296B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC8841BB1C67892E004C296B /* CircuitBreaker.app */,
-				DC8841CF1C67892E004C296B /* CircuitBreakerTests.xctest */,
-				DC8841DA1C67892E004C296B /* CircuitBreakerUITests.xctest */,
+				DC8841BB1C67892E004C296B /* CircuitBreakerExample.app */,
+				DC58D2051C694BB2001D5C36 /* CircuitBreaker.framework */,
+				DC58D20E1C694BB2001D5C36 /* CircuitBreakerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DC8841BD1C67892E004C296B /* CircuitBreaker */ = {
+		DC8841BD1C67892E004C296B /* CircuitBreakerExample */ = {
 			isa = PBXGroup;
 			children = (
 				DC8841BE1C67892E004C296B /* AppDelegate.swift */,
 				DC8841C51C67892E004C296B /* Assets.xcassets */,
-				DC8841EE1C678CC3004C296B /* CircuitBreaker.swift */,
 				DC8841CA1C67892E004C296B /* Info.plist */,
 				DC8841C71C67892E004C296B /* LaunchScreen.storyboard */,
 				DC8841C21C67892E004C296B /* Main.storyboard */,
 				DC8841EC1C678979004C296B /* TestService.swift */,
 				DC8841C01C67892E004C296B /* ViewController.swift */,
 			);
+			name = CircuitBreakerExample;
 			path = CircuitBreaker;
-			sourceTree = "<group>";
-		};
-		DC8841D21C67892E004C296B /* CircuitBreakerTests */ = {
-			isa = PBXGroup;
-			children = (
-				DC8841D31C67892E004C296B /* CircuitBreakerTests.swift */,
-				DC8841D51C67892E004C296B /* Info.plist */,
-			);
-			path = CircuitBreakerTests;
-			sourceTree = "<group>";
-		};
-		DC8841DD1C67892E004C296B /* CircuitBreakerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DC8841DE1C67892E004C296B /* CircuitBreakerUITests.swift */,
-				DC8841E01C67892E004C296B /* Info.plist */,
-			);
-			path = CircuitBreakerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		DC58D2021C694BB2001D5C36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC58D2081C694BB2001D5C36 /* CircuitBreaker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		DC8841BA1C67892E004C296B /* CircuitBreaker */ = {
+		DC58D2041C694BB2001D5C36 /* CircuitBreaker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC8841E31C67892E004C296B /* Build configuration list for PBXNativeTarget "CircuitBreaker" */;
+			buildConfigurationList = DC58D21C1C694BB2001D5C36 /* Build configuration list for PBXNativeTarget "CircuitBreaker" */;
 			buildPhases = (
-				DC8841B71C67892E004C296B /* Sources */,
-				DC8841B81C67892E004C296B /* Frameworks */,
-				DC8841B91C67892E004C296B /* Resources */,
+				DC58D2001C694BB2001D5C36 /* Sources */,
+				DC58D2011C694BB2001D5C36 /* Frameworks */,
+				DC58D2021C694BB2001D5C36 /* Headers */,
+				DC58D2031C694BB2001D5C36 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -148,44 +188,46 @@
 			);
 			name = CircuitBreaker;
 			productName = CircuitBreaker;
-			productReference = DC8841BB1C67892E004C296B /* CircuitBreaker.app */;
-			productType = "com.apple.product-type.application";
+			productReference = DC58D2051C694BB2001D5C36 /* CircuitBreaker.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		DC8841CE1C67892E004C296B /* CircuitBreakerTests */ = {
+		DC58D20D1C694BB2001D5C36 /* CircuitBreakerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC8841E61C67892E004C296B /* Build configuration list for PBXNativeTarget "CircuitBreakerTests" */;
+			buildConfigurationList = DC58D21F1C694BB2001D5C36 /* Build configuration list for PBXNativeTarget "CircuitBreakerTests" */;
 			buildPhases = (
-				DC8841CB1C67892E004C296B /* Sources */,
-				DC8841CC1C67892E004C296B /* Frameworks */,
-				DC8841CD1C67892E004C296B /* Resources */,
+				DC58D20A1C694BB2001D5C36 /* Sources */,
+				DC58D20B1C694BB2001D5C36 /* Frameworks */,
+				DC58D20C1C694BB2001D5C36 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DC8841D11C67892E004C296B /* PBXTargetDependency */,
+				DC58D2111C694BB2001D5C36 /* PBXTargetDependency */,
+				DC58D2131C694BB2001D5C36 /* PBXTargetDependency */,
 			);
 			name = CircuitBreakerTests;
 			productName = CircuitBreakerTests;
-			productReference = DC8841CF1C67892E004C296B /* CircuitBreakerTests.xctest */;
+			productReference = DC58D20E1C694BB2001D5C36 /* CircuitBreakerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DC8841D91C67892E004C296B /* CircuitBreakerUITests */ = {
+		DC8841BA1C67892E004C296B /* CircuitBreakerExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC8841E91C67892E004C296B /* Build configuration list for PBXNativeTarget "CircuitBreakerUITests" */;
+			buildConfigurationList = DC8841E31C67892E004C296B /* Build configuration list for PBXNativeTarget "CircuitBreakerExample" */;
 			buildPhases = (
-				DC8841D61C67892E004C296B /* Sources */,
-				DC8841D71C67892E004C296B /* Frameworks */,
-				DC8841D81C67892E004C296B /* Resources */,
+				DC8841B71C67892E004C296B /* Sources */,
+				DC8841B81C67892E004C296B /* Frameworks */,
+				DC8841B91C67892E004C296B /* Resources */,
+				DC8E40BC1C69486F0018B0D8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DC8841DC1C67892E004C296B /* PBXTargetDependency */,
+				DC58D2191C694BB2001D5C36 /* PBXTargetDependency */,
 			);
-			name = CircuitBreakerUITests;
-			productName = CircuitBreakerUITests;
-			productReference = DC8841DA1C67892E004C296B /* CircuitBreakerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = CircuitBreakerExample;
+			productName = CircuitBreaker;
+			productReference = DC8841BB1C67892E004C296B /* CircuitBreakerExample.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,16 +239,15 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = betriebsraum;
 				TargetAttributes = {
+					DC58D2041C694BB2001D5C36 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					DC58D20D1C694BB2001D5C36 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = DC8841BA1C67892E004C296B;
+					};
 					DC8841BA1C67892E004C296B = {
 						CreatedOnToolsVersion = 7.2.1;
-					};
-					DC8841CE1C67892E004C296B = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = DC8841BA1C67892E004C296B;
-					};
-					DC8841D91C67892E004C296B = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = DC8841BA1C67892E004C296B;
 					};
 				};
 			};
@@ -223,14 +264,28 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC8841BA1C67892E004C296B /* CircuitBreaker */,
-				DC8841CE1C67892E004C296B /* CircuitBreakerTests */,
-				DC8841D91C67892E004C296B /* CircuitBreakerUITests */,
+				DC8841BA1C67892E004C296B /* CircuitBreakerExample */,
+				DC58D2041C694BB2001D5C36 /* CircuitBreaker */,
+				DC58D20D1C694BB2001D5C36 /* CircuitBreakerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DC58D2031C694BB2001D5C36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC58D20C1C694BB2001D5C36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC8841B91C67892E004C296B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,62 +296,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC8841CD1C67892E004C296B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC8841D81C67892E004C296B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC58D2001C694BB2001D5C36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC58D2231C694BCD001D5C36 /* CircuitBreaker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC58D20A1C694BB2001D5C36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC58D2161C694BB2001D5C36 /* CircuitBreakerTests.swift in Sources */,
+				DC5D9FEE1C694E6F00E07A90 /* TestService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC8841B71C67892E004C296B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DC8841ED1C678979004C296B /* TestService.swift in Sources */,
 				DC8841C11C67892E004C296B /* ViewController.swift in Sources */,
-				DC8841EF1C678CC3004C296B /* CircuitBreaker.swift in Sources */,
 				DC8841BF1C67892E004C296B /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC8841CB1C67892E004C296B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC8841D41C67892E004C296B /* CircuitBreakerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC8841D61C67892E004C296B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC8841DF1C67892E004C296B /* CircuitBreakerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DC8841D11C67892E004C296B /* PBXTargetDependency */ = {
+		DC58D2111C694BB2001D5C36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC8841BA1C67892E004C296B /* CircuitBreaker */;
-			targetProxy = DC8841D01C67892E004C296B /* PBXContainerItemProxy */;
+			target = DC58D2041C694BB2001D5C36 /* CircuitBreaker */;
+			targetProxy = DC58D2101C694BB2001D5C36 /* PBXContainerItemProxy */;
 		};
-		DC8841DC1C67892E004C296B /* PBXTargetDependency */ = {
+		DC58D2131C694BB2001D5C36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC8841BA1C67892E004C296B /* CircuitBreaker */;
-			targetProxy = DC8841DB1C67892E004C296B /* PBXContainerItemProxy */;
+			target = DC8841BA1C67892E004C296B /* CircuitBreakerExample */;
+			targetProxy = DC58D2121C694BB2001D5C36 /* PBXContainerItemProxy */;
+		};
+		DC58D2191C694BB2001D5C36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC58D2041C694BB2001D5C36 /* CircuitBreaker */;
+			targetProxy = DC58D2181C694BB2001D5C36 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +353,7 @@
 				DC8841C31C67892E004C296B /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../CircuitBreakerExample;
 			sourceTree = "<group>";
 		};
 		DC8841C71C67892E004C296B /* LaunchScreen.storyboard */ = {
@@ -315,11 +362,77 @@
 				DC8841C81C67892E004C296B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ../CircuitBreakerExample;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DC58D21D1C694BB2001D5C36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CircuitBreaker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.betriebsraum.CircuitBreaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC58D21E1C694BB2001D5C36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CircuitBreaker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.betriebsraum.CircuitBreaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC58D2201C694BB2001D5C36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CircuitBreakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.betriebsraum.CircuitBreakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircuitBreakerExample.app/CircuitBreakerExample";
+			};
+			name = Debug;
+		};
+		DC58D2211C694BB2001D5C36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CircuitBreakerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.betriebsraum.CircuitBreakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircuitBreakerExample.app/CircuitBreakerExample";
+			};
+			name = Release;
+		};
 		DC8841E11C67892E004C296B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,10 +519,11 @@
 		DC8841E41C67892E004C296B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CircuitBreaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.betriebsraum.CircuitBreaker;
+				PRODUCT_BUNDLE_IDENTIFIER = de.betriebsraum.CircuitBreakerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -417,65 +531,36 @@
 		DC8841E51C67892E004C296B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CircuitBreaker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.betriebsraum.CircuitBreaker;
+				PRODUCT_BUNDLE_IDENTIFIER = de.betriebsraum.CircuitBreakerExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		DC8841E71C67892E004C296B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = CircuitBreakerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.betriebsraum.CircuitBreakerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircuitBreaker.app/CircuitBreaker";
-			};
-			name = Debug;
-		};
-		DC8841E81C67892E004C296B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = CircuitBreakerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.betriebsraum.CircuitBreakerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircuitBreaker.app/CircuitBreaker";
-			};
-			name = Release;
-		};
-		DC8841EA1C67892E004C296B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CircuitBreakerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.betriebsraum.CircuitBreakerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = CircuitBreaker;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		DC8841EB1C67892E004C296B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CircuitBreakerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.betriebsraum.CircuitBreakerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = CircuitBreaker;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC58D21C1C694BB2001D5C36 /* Build configuration list for PBXNativeTarget "CircuitBreaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC58D21D1C694BB2001D5C36 /* Debug */,
+				DC58D21E1C694BB2001D5C36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC58D21F1C694BB2001D5C36 /* Build configuration list for PBXNativeTarget "CircuitBreakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC58D2201C694BB2001D5C36 /* Debug */,
+				DC58D2211C694BB2001D5C36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DC8841B61C67892E004C296B /* Build configuration list for PBXProject "CircuitBreaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -485,29 +570,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC8841E31C67892E004C296B /* Build configuration list for PBXNativeTarget "CircuitBreaker" */ = {
+		DC8841E31C67892E004C296B /* Build configuration list for PBXNativeTarget "CircuitBreakerExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC8841E41C67892E004C296B /* Debug */,
 				DC8841E51C67892E004C296B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		DC8841E61C67892E004C296B /* Build configuration list for PBXNativeTarget "CircuitBreakerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC8841E71C67892E004C296B /* Debug */,
-				DC8841E81C67892E004C296B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		DC8841E91C67892E004C296B /* Build configuration list for PBXNativeTarget "CircuitBreakerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC8841EA1C67892E004C296B /* Debug */,
-				DC8841EB1C67892E004C296B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,11 +7,26 @@
 		<key>CircuitBreaker.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>CircuitBreakerExample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>DC58D2041C694BB2001D5C36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC58D20D1C694BB2001D5C36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DC8841BA1C67892E004C296B</key>
 		<dict>
 			<key>primary</key>
@@ -23,6 +38,26 @@
 			<true/>
 		</dict>
 		<key>DC8841D91C67892E004C296B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC8E40A11C69486F0018B0D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC8E40AA1C69486F0018B0D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC8E40C41C6949310018B0D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC8E40CD1C6949310018B0D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

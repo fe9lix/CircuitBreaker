@@ -1,4 +1,5 @@
 import UIKit
+import CircuitBreaker
 
 class ViewController: UIViewController {
     

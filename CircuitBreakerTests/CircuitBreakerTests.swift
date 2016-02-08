@@ -83,7 +83,7 @@ class CircuitBreakerTests: XCTestCase {
     
     func testTripping() {
         let expectation = expectationWithDescription("Tripped call")
-
+        
         circuitBreaker = CircuitBreaker(
             timeout: 10.0,
             maxRetries: 2,
@@ -145,3 +145,5 @@ class CircuitBreakerTests: XCTestCase {
     }
     
 }
+
+
