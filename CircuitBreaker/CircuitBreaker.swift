@@ -93,7 +93,7 @@ public class CircuitBreaker {
     
     private func doCall() {
         call?(self)
-        startTimer(timeout, selector: "didTimeout:")
+        startTimer(timeout, selector: #selector(didTimeout(_:)))
     }
     
     @objc private func didTimeout(timer: NSTimer) {
@@ -104,7 +104,7 @@ public class CircuitBreaker {
     
     private func retryAfterDelay() {
         let delay = exponentialBackoff ? pow(timeBetweenRetries, Double(failureCount)) : timeBetweenRetries
-        startTimer(delay, selector: "shouldRetry:")
+        startTimer(delay, selector: #selector(shouldRetry(_:)))
     }
     
     @objc private func shouldRetry(timer: NSTimer) {
